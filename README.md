@@ -27,7 +27,7 @@ This repository contains a series of SQL queries designed to extract and manipul
 **Books and Publishers**
 - Publishers Table: Maps publisher IDs to publisher names.
 
-## SQL Queries Description**
+## SQL Queries Description
 
 **Users and Genders**
 
