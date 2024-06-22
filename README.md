@@ -1,3 +1,4 @@
+## SQL Book Review Analysis and Insights
 ## Overview
 This repository contains a series of SQL queries designed to extract and manipulate data from a book review database. The database includes various tables such as **`users`**, **`genders`**, **`locations`**, **`occupations`**, **`books`**, **`authors`**, **`publishers`**, **`languages`**, and **`ratings`**. Each query is written to fulfill specific data retrieval needs, focusing on different aspects of the database like user demographics, book details, ratings, and more.
 
