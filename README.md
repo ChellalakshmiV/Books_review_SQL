@@ -27,6 +27,9 @@ This repository contains a series of SQL queries designed to extract and manipul
 **Books and Publishers**
 - Publishers Table: Maps publisher IDs to publisher names.
 
+## Entity Relationship Diagram  (ERD)
+![ERD](https://github.com/ChellalakshmiV/SQL_Book_Review_Analysis_and_Insights/assets/162456368/dd35d687-fbe3-465a-9811-d37bdccac6d8)
+
 ## SQL Queries Description
 
 **Users and Genders**
