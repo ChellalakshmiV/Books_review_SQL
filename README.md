@@ -81,7 +81,7 @@ This repository contains a series of SQL queries designed to extract and manipul
 
 ## Files
 - **README.md:** This file.
-- **queries.sql:** File containing all the SQL queries described.
+- **SQL queries_book_review.sql:** File containing all the SQL queries described.
 
 ## Explore SQL Queries: 
 Review the SQL queries provided in the `SQL queries_book_review.sql` file to understand how data can be extracted and manipulated from the bookreview database.
