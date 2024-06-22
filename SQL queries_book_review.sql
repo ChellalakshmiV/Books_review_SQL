@@ -1,11 +1,11 @@
 use bookreview;
 
 -- 1. [users and genders]
-/*
-a. Write a query to display the first_name, last_name, email, birthdate, and gender for all users
-b. Restrict your query to display only users who were born on 2002
-c. Write a query to display the number of users who were born each year. Sort the output by year (ascending)
-d. Repeat your last query, only this time display only years with more than 54 users (who were born on that year)*/
+
+-- a. Write a query to display the first_name, last_name, email, birthdate, and gender for all users
+-- b. Restrict your query to display only users who were born on 2002
+-- c. Write a query to display the number of users who were born each year. Sort the output by year (ascending)
+-- d. Repeat your last query, only this time display only years with more than 54 users (who were born on that year)
 
 select *from users;
 select * from genders;
@@ -39,11 +39,11 @@ HAVING Number_of_users > 54
 order by Year;
 -- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --  2. [users and locations]
-/*
-a. Write a query to display the first_name, last_name, email, birthdate, country and city for all users
-b. Restrict your query to display only users living in the UK
-c. Write a query to break down the number of users living in each country and city. Sort the output by the number of users (descending)
-d. Restrict your query to count only users above the age 30*/
+
+-- a. Write a query to display the first_name, last_name, email, birthdate, country and city for all users
+-- b. Restrict your query to display only users living in the UK
+-- c. Write a query to break down the number of users living in each country and city. Sort the output by the number of users (descending)
+-- d. Restrict your query to count only users above the age 30
 
 select *from users;
 select * from locations;
@@ -79,10 +79,10 @@ GROUP BY L.country, L.city
 ORDER BY Number_of_users DESC;
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 3. [users and occupations]
-/*
-a. Write a query to display the first_name, last_name, email, age, and occupation_name for all users
-b. Write a query to display the average age for each occupation
-c. Restrict your query to display only occupations with average age greater than 40*/
+
+-- a. Write a query to display the first_name, last_name, email, age, and occupation_name for all users
+-- b. Write a query to display the average age for each occupation
+-- c. Restrict your query to display only occupations with average age greater than 40
 
 select * from users;
 select * from occupations;
@@ -142,9 +142,9 @@ GROUP BY L.language_name
 order by Unique_publishers DESC;
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 7. [users, occupations and locations]
-/*
-a. Write a query to display the first_name, last_name, email, birthdate, occupation_name, country and city for all users
-b. Write a query to breakdown the number of users for each country and occupation*/
+
+-- a. Write a query to display the first_name, last_name, email, birthdate, occupation_name, country and city for all users
+-- b. Write a query to breakdown the number of users for each country and occupation
 
 --   a. Write a query to display the first_name, last_name, email, birthdate, occupation_name, country and city for all users
 SELECT U.first_name, U.last_name, U.email, U.birthdate, O.occupation_name, L.country, L.city
@@ -160,10 +160,10 @@ INNER JOIN locations L ON U.location_id = L.location_id
 GROUP BY L.country,  O.occupation_name;
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 8. [ratings, books and users]
-/*
-a. Write a query to display the rating_id, rating_date, rating, book title, and user's full name for each rating
-b. Restrict your query to display ratings related to the 'Harry Potter' book-series
-c. How many unique users have rated titles related to the 'Harry Potter' book-series?*/
+
+-- a. Write a query to display the rating_id, rating_date, rating, book title, and user's full name for each rating
+-- b. Restrict your query to display ratings related to the 'Harry Potter' book-series
+-- c. How many unique users have rated titles related to the 'Harry Potter' book-series?
 
 -- a. Write a query to display the rating_id, rating_date, rating, book title, and user's full name for each rating
 SELECT R.rating_id, R.rating_date, R.rating, B.title, CONCAT(U.first_name,' ', U.last_name) AS 'full_name'
@@ -199,9 +199,9 @@ WHERE B.title LIKE '%Harry Potter%'
 group by L.country;
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 10. [books and publishers]
-/*
-a. Write a query to display the book title, num_pages and publisher name for all books, including those with no publisher details
-b. Restrict your query to display only books with no publisher details*/
+
+-- a. Write a query to display the book title, num_pages and publisher name for all books, including those with no publisher details
+-- b. Restrict your query to display only books with no publisher details
 
 -- a. Write a query to display the book title, num_pages and publisher name for all books, including those with no publisher details
 
@@ -219,9 +219,9 @@ LEFT JOIN publishers P ON B.publisher_id = P.publisher_id
 WHERE B.publisher_id is null;    
 -- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 11. [books and authors]
-/*
-a. Write a query to display the book title, num_pages, publication_date, and authors for all books, including those with no author details
-b. Restrict your query to display only books with no author details*/
+
+-- a. Write a query to display the book title, num_pages, publication_date, and authors for all books, including those with no author details
+-- b. Restrict your query to display only books with no author details
 
 -- a. Write a query to display the book title, num_pages, publication_date, and authors for all books, including those with no author details
 
